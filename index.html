@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Max World</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".navbar-nav li").click(function() {
+			$(this).toggleClass("focus")
+		});
+	});
+	</script>
+	<style>
+	body {
+		position: relative;
+	}
+	#section1 {
+		padding-top: 150px;
+		padding-bottom: 50px;
+		background-color: #1abc9c; /* Green */
+		color: #ffffff;
+	}
+	#section2 {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: #474e5d; /* Dark Blue */
+		color: #ffffff;
+	}
+	#section3 {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: #ffffff; /* White */
+		color: #555555;
+		border-style: solid;
+		border-width: thin;
+	}
+	#section4 {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background-color: #006998; /* Sapphire */
+		color: #ffffff;
+	}
+	.footer {
+		background-color: #2f2f2f;
+		color: #ffffff;
+	}
+	a#movetopbtn {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 999;
+}
+	</style>
+</head>
+<body>
+
+	<!-- navbar 시작 -->
+
+	<div class="container-fluid">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span> Max World</a>
+			</div>
+			<div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#section1">소개</a></li>
+						<li><a href="#section2">프로젝트 경력</a></li>
+						<li><a href="#section3">교육이수내역</a></li>
+						<li><a href="#section4">보유기술 및 능력</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<!-- navbar 끝 -->
+
+		<div id="main">
+			<a id="movetopbtn" href="#"><h1 style="color: black;"><span class="glyphicon glyphicon-circle-arrow-up"></span></h1></a>
+
+			<!-- section1 -->
+
+			<div id="section1" style="height:auto" class="container-fluid text-center">
+				<p>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3">
+								<img style="float:auto;" src="img/uig.jpg" class="img-rounded" alt="Uigyeom" width="200px"></div>
+								<div class="col-md-5">
+									<h1 class="text-center" style="font-size:80px;line-height:1.2;margin-top:10px">&lt;U<font color="white">/</font>GYEOM<br />
+										YANG&gt;</h1></div>
+										<div style="padding-top:25px;" class="col-md-4 table-responsive">
+											<table class="table text-left">
+												<thead>
+													<tr>
+														<th colspan="2"><span class="glyphicon glyphicon-info-sign"></span> Information</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td><span class="glyphicon glyphicon-user"></span> 이름</td>
+														<td>양 의 겸</td>
+													</tr>
+													<tr>
+														<td><span class="glyphicon glyphicon-gift"></span> 생년월일</td>
+														<td>1987.4.26(29)</td>
+													</tr>
+													<tr style="border-bottom: 2px solid #ddd">
+														<td><span class="glyphicon glyphicon-envelope"></span> E-mail</td>
+														<td>euikyum.yang@gmail.com</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</p><br />
+						</div>
+
+						<!-- section2 -->
+
+						<div id="section2" class="container-fluid text-center">
+							<div class="container">
+								<h1><span class="glyphicon glyphicon-briefcase"></span> 프로젝트 경력</h1>
+								<h3>
+									<p align="center">통합게시판(한국경영원 인재개발원), 2016.3.31 ~ 7.26</p></br>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal1"><img src="img/pf/ERD논리.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												통합게시판 ERD(논리)
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal2"><img src="img/pf/ERD논리.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												통합게시판 ERD(물리)
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal3"><img src="img/pf/로그인.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												로그인 화면
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal4"><img src="img/pf/회원가입.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												회원가입 화면
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal5"><img src="img/pf/메인화면.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												메인화면
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal6"><img src="img/pf/게시판뷰.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시판뷰
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal7"><img src="img/pf/게시물등록.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 등록
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal8"><img src="img/pf/게시물조회.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 조회
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal9"><img src="img/pf/게시물수정.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 수정
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal10"><img src="img/pf/게시물삭제.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 삭제
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal11"><img src="img/pf/게시물검색.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 검색
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal12"><img src="img/pf/게시물컨트롤러소스.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 컨트롤러 소스
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal13"><img src="img/pf/게시물서비스소스.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 서비스 소스
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal14"><img src="img/pf/게시물DAO소스.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 DAO 소스
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal15"><img src="img/pf/게시물쿼리소스.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 쿼리 소스
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal16"><img src="img/pf/게시물DTO소스.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												게시물 DTO 소스
+											</div>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 50px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-4" style="padding:0">
+											<a data-toggle="modal" href="#modal17"><img src="img/pf/Oracle실행계획.JPG" width="100%"></a>
+											<div style="border: 1px solid white;padding-top: 10px;padding-bottom: 10px;">
+												Oracle 실행계획
+											</div>
+										</div>
+										<div class="col-md-2"></div>
+										<div class="col-md-4">
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+									<div class="row" style="padding-bottom: 30px;">
+										<div class="col-md-1"></div>
+										<div class="col-md-10" style="padding-left: 0px;padding-right: 0px">
+											<table class="table text-left table-responsive h4">
+												<tbody>
+													<tr style="border-top: 2px solid #ddd">
+														<td>사용언어</td>
+														<td>HTML, CSS, JavaScript, jQury, Java</td>
+													</tr>
+													<tr>
+														<td>기술, 프레임워크,</br>DBMS</td>
+														<td>AJAX, Spring Framework(Spring Security), </br>Servlet(JSP), myBATIS, Oracle</td>
+													</tr>
+													<tr style="border-bottom: 2px solid #ddd">
+														<td>WAS 및 사용툴</td>
+														<td>Tomcat, Eclipse(STS), ER-Win, 형상관리(SVN), </br>DB클라이언트 툴(SQL Gate, SQL Developer)</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="col-md-1"></div>
+									</div>
+								</h3>
+							</div>
+						</div>
+
+						<!-- section3 -->
+
+						<div id="section3" class="container-fluid text-center">
+							<div class="container">
+								<h1><span class="glyphicon glyphicon-education"></span> 교육이수내역</h1>
+								<div class="row" style="padding-bottom: 30px;">
+									<div class="col-md-1"></div>
+									<div class="col-md-10" style="padding-left: 0px;padding-right: 0px">
+										<table class="table text-left table-responsive h4">
+											<tbody>
+												<tr style="border-top: 2px solid #ddd">
+													<td>교육과정명</td>
+													<td>Java기반 웹개발자 양성과정(NCS)</td>
+												</tr>
+												<tr>
+													<td>교육기관</td>
+													<td>한국경영원 인재개발원</td>
+												</tr>
+												<tr>
+													<td>교육기간</td>
+													<td>2016. 3. 31 ~ 7. 26</td>
+												</tr>
+												<tr>
+													<td>교육내용</td>
+													<td>HTML, CSS, JavaScript, jQuery, Java, myBATIS, Oracle DB, </br>SQL, ERD, WAS(Tomcat), Servlet(JSP), Eclipse, Spring Framework</td>
+												</tr>
+												<tr style="border-bottom: 2px solid #ddd">
+													<td>최종 프로젝트</td>
+													<td>통합게시판</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+							</div>
+						</div>
+
+						<!-- section4 -->
+
+						<div id="section4" class="container-fluid text-center">
+							<div class="container">
+								<h1><span class="glyphicon glyphicon-flash"></span> 보유기술 및 능력</h1>
+								<div class="row" style="padding-bottom: 30px;">
+									<div class="col-md-1"></div>
+									<div class="col-md-10" style="padding-left: 0px;padding-right: 0px">
+										<table class="table text-left table-responsive h4">
+											<tbody>
+												<tr style="border-top: 2px solid #ddd">
+													<td>운영체제</td>
+													<td>Windows 계열</td>
+												</tr>
+												<tr>
+													<td>데이터베이스</td>
+													<td>Oracle</td>
+												</tr>
+												<tr>
+													<td>언어 및 프레임워크</td>
+													<td>Java, Spring(Spring Security), myBATIS, jQuery, HTML, CSS, JavaScript, Servlet(JSP)</td>
+												</tr>
+												<tr>
+													<td>WAS, WEB 서버</td>
+													<td>Tomcat</td>
+												</tr>
+												<tr>
+													<td>사용 툴</td>
+													<td>Eclipse(STS), ER-Win, 형상관리(SVN), DB 클라이언트 툴(SQL Gate, SQL Developer)</td>
+												</tr>
+												<tr style="border-bottom: 2px solid #ddd">
+													<td>외국어</td>
+													<td>영어(TOEIC 940점, OPIc AL급), 태국어(OPI AH급)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+							</div>
+						</div>
+						<footer class="container-fluid footer text-center">
+							<p>Copyright 2016 양의겸</p>
+						</footer>
+
+						<div id="modal1" class="modal fade" role="dialog">
+						  <div class="modal-dialog modal-lg">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						        <h4 class="modal-title">통합게시판 ERD(논리)</h4>
+						      </div>
+						      <div class="modal-body">
+						        <img class="img-responsive" src="img/pf/ERD논리.JPG">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div id="modal2" class="modal fade" role="dialog">
+						  <div class="modal-dialog modal-lg">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal">&times;</button>
+						        <h4 class="modal-title">통합게시판 ERD(물리)</h4>
+						      </div>
+						      <div class="modal-body">
+						        <img class="img-responsive" src="img/pf/ERD물리.JPG">
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<div id="modal3" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">로그인 화면</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/로그인.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal4" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">회원가입 화면</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/회원가입.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal5" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">메인화면</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/메인화면.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal6" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시판뷰</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시판뷰.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal7" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 등록</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물등록.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal8" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 조회</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물조회.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal9" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 수정</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물수정.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal10" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 삭제</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물삭제.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal11" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 검색</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물검색.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal12" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 컨트롤러 소스</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물컨트롤러소스.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal13" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 서비스 소스</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물서비스소스.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal14" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 DAO 소스</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물DAO소스.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal15" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 쿼리 소스</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물쿼리소스.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal16" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">게시물 DTO 소스</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/게시물DTO소스.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div id="modal17" class="modal fade" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Oracle 실행계획</h4>
+									</div>
+									<div class="modal-body">
+										<img class="img-responsive" src="img/pf/Oracle실행계획.JPG">
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<script>
+						$(document).ready(function() {
+							// Add scrollspy to <body>
+							$('body').scrollspy({
+								target : ".navbar",
+								offset : 50
+							});
+							// Add smooth scrolling on all links inside the navbar
+							$("#myNavbar a").on('click', function(event) {
+								// Make sure this.hash has a value before overriding default behavior
+								if (this.hash !== "") {
+									// Prevent default anchor click behavior
+									event.preventDefault();
+									// Store hash
+									var hash = this.hash;
+									// Using jQuery's animate() method to add smooth page scroll
+									// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+									$('html, body').animate({
+										scrollTop : $(hash).offset().top
+									}, 800, function() {
+										// Add hash (#) to URL when done scrolling (default click behavior)
+										window.location.hash = hash;
+									});
+								} // End if
+							});
+						});
+						$(function() {
+							$(window).scroll(function() {
+								if ($(this).scrollTop() > 500) {
+									$('#movetopbtn').fadeIn();
+								} else {
+									$('#movetopbtn').fadeOut();
+								}
+							});
+
+							$("#movetopbtn").click(function() {
+								$('html, body').animate({
+									scrollTop : 0
+								}, 400);
+								return false;
+							});
+						});
+						</script>
+					</body>
+					</html>
